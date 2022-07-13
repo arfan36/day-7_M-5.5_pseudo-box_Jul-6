@@ -16,12 +16,38 @@
             background-color: seagreen;
             font-weight: 700;
         }
-        .middle-person{
+
+        .middle-person {
             color: blue;
             font-weight: 700;
         }
-        a:visited{
+
+        a:visited {
             color: red;
+        }
+
+        li:first-child {
+            color: chocolate;
+        }
+
+        li:last-child {
+            background-color: cornflowerblue;
+        }
+
+        li:nth-child(2n) {
+            color: crimson;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: darkgray;
+        }
+        h3::before {
+            content: 'Hello ';
+        }
+        .special::after{
+            content: " Gello";
+            background-color: darkkhaki;
+            font-size: 10px;
         }
     </style>
 </head>
@@ -35,7 +61,24 @@
     <a href="https://www.google.com.bd/">Google</a>
     <a href="https://www.underconsideration.com/brandnew/">Never-Visited</a>
     <a href="https://web.programming-hero.com/">Programming-Hero</a>
-
+    <br>
+    <h3>middle size header - 1</h3>
+    <h3 class="special">middle size header - 2</h3>
+    <h3>middle size header - 3</h3>
+    <h3 class="special">middle size header - 4</h3>
+    <h3 class="special">middle size header - 5</h3>
+    <h3>middle size header - 6</h3>
+    <ul>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>Kalia</li>
+        <li>Calia</li>
+        <li>Jalai</li>
+        <li>Charia</li>
+        <li>Maria</li>
+        <li>Faria</li>
+        <li>Jaria</li>
+    </ul>
 </body>
 
 </html>
